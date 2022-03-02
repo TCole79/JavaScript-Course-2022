@@ -98,3 +98,30 @@ const year = 2022;
 
 const tristan = `My name is ${firstName} ${lastName}, I'm a junior ${job} and I'm ${year - birthyear} years old`;
 */
+
+// Decisions - If statements
+const age = 19;
+const isOldEnough = age >= 18;
+
+if (isOldEnough) {
+  console.log("Person can start learning to drive as she's old enough to drive.");
+  } else {
+    const yearsLeft = 18 - age;
+    console.log(`Person is too young. Wait another ${yearsLeft} years.`);
+};
+
+// 'If else control structure' =
+if () {
+} else {
+};
+
+
+const birthYear = 1979;
+let century;
+
+if (birthYear <= 2000) {
+  let century = 20;
+} else {
+  let century = 21;
+};
+console.log(century);
