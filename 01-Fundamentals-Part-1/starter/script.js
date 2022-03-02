@@ -58,8 +58,8 @@ Test data:
 m tall.
 § Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76
 m tall.
-*/
 
+// Programming test 1 // 
 // Data 1
 let weightMark1 = 78;
 let heightMark1 = 1.69;
@@ -87,3 +87,14 @@ console.log("John's BMI is " + johnBMI2);
 
 let markHigherBMI2 = markBMI2 > johnBMI2;
 console.log(markHigherBMI2);
+
+
+// Strings and template literals
+const firstName = "Tristan";
+const lastName = "Cole";
+const job = "Developer";
+const birthyear = 1979;
+const year = 2022;
+
+const tristan = `My name is ${firstName} ${lastName}, I'm a junior ${job} and I'm ${year - birthyear} years old`;
+*/
