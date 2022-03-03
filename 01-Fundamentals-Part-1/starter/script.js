@@ -98,7 +98,7 @@ console.log('23' * '2');
 let n = '1' + 1; // 11
 n = n - 1; // 10
 console.log(n);
-*/
+
 
 
 
@@ -123,4 +123,32 @@ if (height) {
   console.log("Yay! Height is defined.");
 } else {
   console.log("Booo. Height is undefined.");
+};
+*/
+
+
+
+//// Equality Operators ////
+const age = 18;
+if (age === 18) {
+  console.log("You are an adult.");
+};
+
+// for clean code, avoid the loose equality operator - '==' - as this can introduce unexpected bugs
+// you should default to the strict equality operator - '==='
+
+const favourite = Number(prompt("What is your favourite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) {
+  console.log("Cool! Looks like 23 is your favourite!")
+} else if (favourite === 7) {
+  console.log("7 is also a good number.")
+} else {
+  console.log("Number is no 7 or 23, so sad.")
+};
+
+if (favourite !== 23) {
+  console.log("Why not 23?")
 };
