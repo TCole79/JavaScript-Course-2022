@@ -124,7 +124,6 @@ if (height) {
 } else {
   console.log("Booo. Height is undefined.");
 };
-*/
 
 
 
@@ -152,3 +151,33 @@ if (favourite === 23) {
 if (favourite !== 23) {
   console.log("Why not 23?")
 };
+*/
+
+
+
+//// Bolean Logic + Logical Operators ////
+
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+if (shouldDrive) {
+  console.log("Sarah is able to drive.");
+} else {
+  console.log("Someone else should drive.");
+}
+
+
+const isTired = true; // C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (shouldDrive && !isTired) {
+  console.log("Sarah is able to drive.");
+} else {
+  console.log("Someone else should drive.");
+}
