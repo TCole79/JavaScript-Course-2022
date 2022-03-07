@@ -225,10 +225,32 @@ if (day === 'monday') {
 } else {
   console.log("Not a valid day.")
 }
-*/
 
 
 //// Statements & Expressions ////
 
 // An expression is a piece of code that produces a value
 // A statement is a larger piece of code that when executed does not produce a value
+*/
+
+
+
+//// Conditional (ternary) Operator ////
+const age = 23;
+age >= 18 ? console.log("I like to drink wine.") : console.log("I like to drink water.");
+
+// an operator is an expression, and expressions produce a value
+const drink = age >= 18 ? "wine" : "water";
+console.log(drink);
+
+// another way to do the above ternary operator
+let drink2;
+if (age >= 18) {
+  drink2 = "wine";
+} else {
+  drink2 = "water";
+}
+console.log(drink2);
+
+// ternary operator expressions can be used in string literals (unlike if/else), for example:
+console.log(`I like to drink ${age >= 18 ? "wine" : "water"}`)
