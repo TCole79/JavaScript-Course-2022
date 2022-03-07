@@ -180,7 +180,6 @@ if (shouldDrive && !isTired) {
 } else {
   console.log("Someone else should drive.");
 }
-*/
 
 
 
@@ -226,3 +225,10 @@ if (day === 'monday') {
 } else {
   console.log("Not a valid day.")
 }
+*/
+
+
+//// Statements & Expressions ////
+
+// An expression is a piece of code that produces a value
+// A statement is a larger piece of code that when executed does not produce a value
