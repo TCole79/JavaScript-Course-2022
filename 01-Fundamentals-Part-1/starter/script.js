@@ -151,7 +151,6 @@ if (favourite === 23) {
 if (favourite !== 23) {
   console.log("Why not 23?")
 };
-*/
 
 
 
@@ -180,4 +179,50 @@ if (shouldDrive && !isTired) {
   console.log("Sarah is able to drive.");
 } else {
   console.log("Someone else should drive.");
+}
+*/
+
+
+
+//// Switch Statements ////
+const day = 'monday';
+
+switch(day) {
+  case 'monday': 
+    console.log("Practice three hours of coding.")
+    console.log("Do three hours of job searching.")
+    console.log("Do three hours of networking.")
+    break;
+  case 'tuesday':
+    console.log("Practice three hours of coding.")
+    break;
+  case 'wednesday':
+  case 'thursday':
+    console.log("Practice three hours of coding.")
+    break;
+  case 'friday':
+    console.log("Practice three hours of coding.")
+  case 'saturday':
+  case 'sunday':
+    console.log("Keep up the coding!")
+    break;
+  default:
+    console.assert.log("Not a valid day!")
+}
+
+// if else version of the above switch
+if (day === 'monday') {
+  console.log("Practice three hours of coding.")
+    console.log("Do three hours of job searching.")
+    console.log("Do three hours of networking.")
+} else if (day === 'tuesday') {
+  console.log("Practice three hours of coding.")
+} else if (day === 'wednesday' || day === 'thursday') {
+  console.log("Practice three hours of coding.")
+} else if (day === 'friday') {
+  console.log("Practice three hours of coding.")
+} else if (day === 'saturday' || day === 'sunday') {
+  console.log("Keep up the coding!")
+} else {
+  console.log("Not a valid day.")
 }
