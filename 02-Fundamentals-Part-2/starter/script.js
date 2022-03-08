@@ -13,12 +13,12 @@ if (hasDriversLicense) console.log("I can drive.");
 
 //// Functions ////
 
-// function delaration
+// this is a function delaration
 function logger() {
   console.log("My name is Tristan.");
 };
 
-// function expression
+// this is a function expression, or anonymous function
 // let logger = function() {
 // };
 
@@ -36,4 +36,21 @@ console.log(appleJuice);
 
 const appleOrangeJuice = fruitProcesser(2, 4);
 console.log(appleOrangeJuice);
+
+
+
+//// Function Declaration vs Function Expressions ////
+
+// Function Declaration
+function calcAge1(birthYear) {
+  return 2037 - birthYear;
+}
+const age1 = calcAge1(1991);
+
+// Function expression
+const calcAge2 = function (birthYear) {
+  return 2037 - birthYear;
+}
+const age2 = calcAge2(1991);
+console.log(age1, age2);
 */
