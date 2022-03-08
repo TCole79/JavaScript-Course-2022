@@ -8,6 +8,10 @@ console.log(country, continent, population);
 // Lecture - Data types
 let isIsland = false;
 let language = English;
+console.log(typeof isIsland);
+console.log(typeof population);
+console.log(typeof country);
+console.log(typeof language);
 
 // Lecture - let, const, var
 
@@ -22,3 +26,5 @@ let averagePopulation = 33000000;
 console.log(population > averagePopulation);
 
 let desciption = `${country} is in ${continent}, and its ${population} people speak ${language}`;
+
+// Lecture - Takinf Decisions 
