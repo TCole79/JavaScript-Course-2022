@@ -54,3 +54,20 @@ const calcAge2 = function (birthYear) {
 const age2 = calcAge2(1991);
 console.log(age1, age2);
 */
+
+
+//// Arrow Functions ////
+// this is a special form of function expression that is shorter, and therefore faster, to write. They have implicit returns if only one line of code in the function, like the first example here on line 62.
+
+const calcAge3 = birthYear => 2037 - birthYear;
+const age3 = calcAge3(1991);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age = 2037 - birthYear;
+  const retirement = 65 - age;
+  // return retirement;
+  return `${firstName} retires in ${retirement} years.`
+}
+console.log(yearsUntilRetirement(1979, 'Tristan'));
+console.log(yearsUntilRetirement(1991, 'Fred'));
