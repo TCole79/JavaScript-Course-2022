@@ -71,7 +71,7 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 }
 console.log(yearsUntilRetirement(1979, 'Tristan'));
 console.log(yearsUntilRetirement(1991, 'Fred'));
-*/
+
 
 
 //// Functions calling other functions ////
@@ -89,3 +89,33 @@ function fruitProcesser(apples, oranges) {
   return juice;
 }
 console.log(fruitProcesser(2, 3));
+*/
+
+
+//// Reviewing Functions ////
+
+// some refactoring below:
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+}
+
+const yearsUntilRetirement = function (birthYear, firstName) {
+  const age = calcAge(birthYear);
+  const retirement = 65 - age;
+
+  if (retirement > 0) {
+    console.log(`${firstName} retires in ${retirement} years.`)
+    return retirement;
+  } else {
+    console.log(`${firstName} has already retired.`)
+    return -1;
+  }
+
+  //return 
+}
+console.log(yearsUntilRetirement(1991, 'Tristan'));
+console.log(yearsUntilRetirement(1970, 'Mike'));
+
+// Function Declaration = function that can be used before it's declared
+// Function Expression = essentially a function value, stored in a variable
+// Arrow Function = great for short one-line functions. Has no 'this' keyword.
