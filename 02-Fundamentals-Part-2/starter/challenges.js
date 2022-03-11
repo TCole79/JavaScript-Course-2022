@@ -30,6 +30,11 @@ const calcAverage = (a, b, c) => (a + b + c) / 3;
 console.log(calcAverage(44, 23, 71));
 
 // q.2 
+// game 1 scores
+const scoreDolphins = calcAverage(44, 23, 71);
+const scoreKoalas = calcAverage(65, 54, 49);
+console.log(scoreDolphins, scoreKoalas);
+// game 2 scores
 const scoreDolphins = calcAverage(85, 54, 41);
 const scoreKoalas = calcAverage(23, 34, 27);
 console.log(scoreDolphins, scoreKoalas);
@@ -44,4 +49,5 @@ const checkWinner = function(avgDolphins, avgKoalas) {
     console.log(`No team wins.`);
   }
 }
+// choose if you want to use game 1 or 2 scores
 checkWinner(scoreDolphins, scoreKoalas);

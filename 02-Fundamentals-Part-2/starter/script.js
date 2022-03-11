@@ -89,7 +89,7 @@ function fruitProcesser(apples, oranges) {
   return juice;
 }
 console.log(fruitProcesser(2, 3));
-*/
+
 
 
 //// Reviewing Functions ////
@@ -119,3 +119,43 @@ console.log(yearsUntilRetirement(1970, 'Mike'));
 // Function Declaration = function that can be used before it's declared
 // Function Expression = essentially a function value, stored in a variable
 // Arrow Function = great for short one-line functions. Has no 'this' keyword.
+*/
+
+
+//// Introduction to Arrays ////
+const friend1 = 'Mike';
+const friend2 = 'Skip';
+const friend3 = 'Scott';
+
+const friends = ['Mike', 'Skip', 'Scott'];
+console.log(friends);
+
+// alternate way to create an array
+const y = new Array(1191, 2007, 1476, 1888);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'Baron';
+console.log(friends);
+
+// you can put different types of variables in arrays, like this:
+const firstName = 'Tristan';
+const fred = [firstName, "Cole", 2022 - 1979, 'junior dev', friends];
+
+// array exercise
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+}
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+console.log(age1, age2, age3);
+
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+console.log(ages);
